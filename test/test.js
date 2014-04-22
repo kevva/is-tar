@@ -6,7 +6,7 @@ var fs = require('fs');
 var isTar = require('../');
 var path = require('path');
 
-describe('extname()', function () {
+describe('isTar()', function () {
     function check(file) {
         return isTar(fs.readFileSync(file));
     }
