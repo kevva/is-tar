@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "Check if a Buffer/Uint8Array is a TAR file",
   "license": "MIT",
-  "repo": "kevva/is-tar",
+  "repository": "kevva/is-tar",
   "main": "index.js",
   "scripts": [
     "index.js"
