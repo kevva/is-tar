@@ -1,18 +1,15 @@
-/*global describe, it */
 'use strict';
 
-var assert = require('assert');
 var isTar = require('../');
 var path = require('path');
 var readChunk = require('read-chunk');
+var test = require('ava');
 
-describe('isTar()', function () {
-    function check(file) {
-        return isTar(readChunk.sync(file, 0, 262));
-    }
+test('should detect TAR from buffer', function (t) {
+    t.plan(2);
 
-    it('should detect TAR from buffer', function (cb) {
-        assert(check(path.join(__dirname, 'fixtures/test.tar')));
-        cb();
+    readChunk(path.join(__dirname, 'fixtures/test.tar'), 0, 262, function (err, buf) {
+        t.assert(!err);
+        t.assert(isTar(buf));
     });
 });
