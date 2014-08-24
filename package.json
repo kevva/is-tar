@@ -13,7 +13,6 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "browser": "browserify -s $npm_package_name -o browser.js .",
     "test": "mocha --reporter list"
   },
   "files": [

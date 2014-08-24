@@ -4,26 +4,17 @@
 
 ## Install
 
-```bash
+```sh
 $ npm install --save is-tar
-```
-
-```bash
-$ component install kevva/is-tar
-```
-
-```bash
-$ bower install --save is-tar
 ```
 
 ## Usage
 
 ```js
-var fs = require('fs');
 var isTar = require('is-tar');
-var buf = fs.readFileSync('foo.tar');
+var read = require('fs').readFileSync;
 
-isTar(buf);
+isTar(read('file.tar'));
 // => true
 ```
 
