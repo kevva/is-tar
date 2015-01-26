@@ -1,4 +1,4 @@
-# is-tar [![Build Status](https://travis-ci.org/kevva/is-tar.svg?branch=master)](https://travis-ci.org/kevva/is-tar)
+# is-tar [![Build Status](http://img.shields.io/travis/kevva/is-tar/master.svg?style=flat)](https://travis-ci.org/kevva/is-tar)
 
 > Check if a Buffer/Uint8Array is a TAR file
 
@@ -15,7 +15,7 @@ var isTar = require('is-tar');
 var read = require('fs').readFileSync;
 
 isTar(read('file.tar'));
-// => true
+//=> true
 ```
 
 ## License
