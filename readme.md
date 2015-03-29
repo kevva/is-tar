@@ -2,11 +2,13 @@
 
 > Check if a Buffer/Uint8Array is a TAR file
 
+
 ## Install
 
-```sh
+```
 $ npm install --save is-tar
 ```
+
 
 ## Usage
 
@@ -17,6 +19,7 @@ var read = require('fs').readFileSync;
 isTar(read('file.tar'));
 //=> true
 ```
+
 
 ## License
 
