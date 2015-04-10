@@ -13,8 +13,8 @@ $ npm install --save is-tar
 ## Usage
 
 ```js
-var isTar = require('is-tar');
 var read = require('fs').readFileSync;
+var isTar = require('is-tar');
 
 isTar(read('file.tar'));
 //=> true
