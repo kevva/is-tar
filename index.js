@@ -1,6 +1,5 @@
 'use strict';
-
-module.exports = function (buf) {
+module.exports = buf => {
 	if (!buf || buf.length < 262) {
 		return false;
 	}

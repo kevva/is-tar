@@ -1,4 +1,4 @@
-# is-tar [![Build Status](http://img.shields.io/travis/kevva/is-tar/master.svg?style=flat)](https://travis-ci.org/kevva/is-tar)
+# is-tar [![Build Status](https://travis-ci.org/kevva/is-tar.svg?branch=master)](https://travis-ci.org/kevva/is-tar)
 
 > Check if a Buffer/Uint8Array is a TAR file
 
@@ -6,17 +6,17 @@
 ## Install
 
 ```
-$ npm install --save is-tar
+$ npm install is-tar
 ```
 
 
 ## Usage
 
 ```js
-var read = require('fs').readFileSync;
-var isTar = require('is-tar');
+const fs = require('fs');
+const isTar = require('is-tar');
 
-isTar(read('file.tar'));
+isTar(fs.readFileSync('foo.tar'));
 //=> true
 ```
 
